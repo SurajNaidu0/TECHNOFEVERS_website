@@ -1,0 +1,43 @@
+// _header.scss
+
+header {
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    max-width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav {
+    @include flex-center;
+    padding-top: 0;
+  }
+
+  .textlogoflex {
+    display: flex;
+    padding-bottom: 20px;
+    @include flex-center;
+  }
+
+  .textlogo {
+    max-width: 145px;
+  }
+
+  ul {
+    display: flex;
+    @include flex-center;
+    gap: 2rem;
+    padding-bottom: 20px;
+
+    a {
+      font-weight: 500;
+      padding: 5px 10px;
+      transition: color 0.3s;
+      font-family: $font-primary;
+    }
+  }
+}

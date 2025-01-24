@@ -1,0 +1,38 @@
+// _buttons.scss
+
+.btn,
+.nav-button,
+.contact-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background: $secondary-color;
+  color: white;
+  border: none;
+}
+
+.nav-button {
+  background: transparent;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+
+  &:hover {
+    background: $primary-color;
+    color: white;
+  }
+}
+
+.contact-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+
+  &:hover {
+    background: white;
+    color: $accent-color;
+  }
+}

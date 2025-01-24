@@ -1,0 +1,78 @@
+// _team.scss
+
+.team-section {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .team-title {
+    text-align: center;
+    color: $primary-color;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .team-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .team-container {
+    display: flex;
+    gap: 2rem;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.3s ease;
+  }
+
+  .team-card {
+    min-width: 300px;
+    background: white;
+    border-radius: 8px;
+    padding-bottom: 1.5rem;
+    @include card-shadow;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+
+    h3 {
+      color: $primary-color;
+      margin: 1rem;
+      font-size: 1.25rem;
+    }
+
+    .position {
+      color: #666;
+      margin: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .description {
+      color: #555;
+      margin: 0.5rem 1rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    .team-container {
+      gap: 1rem;
+    }
+
+    .team-card {
+      min-width: 260px;
+    }
+  }
+}

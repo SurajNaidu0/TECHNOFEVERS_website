@@ -1,0 +1,30 @@
+// _achievements.scss
+
+.achievements {
+  background: $secondary-color;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  padding-top: 6rem;
+
+  h1 {
+    color: white;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+
+  .stat-item {
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}

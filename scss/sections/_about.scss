@@ -1,0 +1,71 @@
+// _about.scss
+
+#about-us {
+  background-color: #ffffff;
+  padding: 40px 5%;
+  text-align: center;
+  position: relative;
+  margin-top: -100px;
+  z-index: 10;
+  border-radius: 10px;
+  @include card-shadow;
+  margin: {
+    left: 11rem;
+    right: 11rem;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .section-divider {
+    width: 50px;
+    height: 2px;
+    background-color: $accent-color;
+    margin: 10px auto;
+    border: none;
+  }
+
+  p {
+    max-width: 800px;
+    margin: 10px auto;
+    color: $text-light;
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  @media (max-width: $desktop) {
+    padding: 40px 8%;
+    margin: {
+      top: -80px;
+      left: 0;
+      right: 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding: 40px 10%;
+    margin-top: -60px;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}

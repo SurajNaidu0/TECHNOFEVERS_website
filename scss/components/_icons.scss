@@ -1,0 +1,27 @@
+// _icons.scss
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  fill: #666;
+  transition: fill 0.3s ease;
+
+  &:hover {
+    fill: #333;
+  }
+}
+
+.menu-icon {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: url("/requirements/menuicon.png") no-repeat center;
+  background-size: contain;
+
+  @media screen and (max-width: 550px) {
+    display: block;
+  }
+}
