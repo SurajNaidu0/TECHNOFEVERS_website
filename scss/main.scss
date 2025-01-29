@@ -12,9 +12,9 @@
 @import "components/icons";
 
 // Layout imports
-@import "components/header";
-@import "components/navigation";
-@import "components/footer";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
 
 // Sections imports
 @import "sections/about";
@@ -24,6 +24,3 @@
 @import "sections/team";
 @import "sections/testimonials";
 @import "sections/work";
-
-// Responsive imports
-@import "base/responsive";
