@@ -70,7 +70,7 @@ ul a:hover {
     position: absolute;
     right: 20px;
     top: 20px;
-    background: url("/requirements/menuicon.png") no-repeat center;
+    background: URL("./req/menuicon.png") no-repeat center;
     background-size: contain;
   }
 
